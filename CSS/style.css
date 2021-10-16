@@ -1,0 +1,113 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway:ital,wght@1,200&display=swap");
+
+:root {
+  --main-font-color: #1a1a1a;
+  --main-bg-color: white;
+  --main-theme-color: rgb(243, 168, 47);
+  --container-width: 768px;
+  --light-white: #f5f5f5;
+  --light-grey: #ccc;
+  --light-black: #282a39;
+  --font-body-stack: Raleway, Charcoal, sans-serif;
+  --heading-font-color: rgb(139, 139, 139);
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.app {
+  width: var(--container-width);
+  margin-right: auto;
+  margin-left: auto;
+  margin-top: 0.2rem;
+}
+
+.app__question-container {
+  text-align: center;
+  padding: 1rem 2rem;
+}
+
+#question-container__question {
+  padding: 1rem;
+}
+#question-container__ques-no {
+  font-family: monospace;
+  padding: 0.8rem;
+  font-size: 0.9rem;
+  font-weight: 900;
+  color: rgb(88, 88, 88);
+}
+
+.question-container__progress-bar {
+  background-color: var(--light-grey);
+  width: 40%;
+  margin: auto;
+  margin-top: 1rem;
+  border-radius: 20px;
+}
+#progress-bar-inner {
+  height: 8px;
+  background: var(--main-theme-color);
+  width: 50%;
+}
+
+#note {
+  color: grey;
+  font-weight: 700;
+  padding: 1rem;
+}
+
+.app__options-container {
+}
+
+.options-container__choices {
+  padding: 1rem;
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  font-family: system-ui;
+}
+.quiz-choice {
+  flex-basis: 45%;
+  text-align: center;
+  height: 80px;
+  background: var(--light-white);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 8px;
+  margin: 1.5rem 0;
+}
+
+.choice-input {
+  opacity: 0;
+}
+.choice-label {
+  cursor: pointer;
+}
+
+.choice-input:checked + .choice-label {
+  color: var(--main-theme-color);
+}
+
+button {
+  display: block;
+  width: 80%;
+  margin: auto;
+  padding: 1rem;
+  margin-top: 0.7rem;
+  color: var(--light-black);
+  font-weight: 600;
+  border-radius: 10px;
+  /* border: none; */
+  cursor: pointer;
+  transition: 0.5s ease-in-out background-color;
+}
+
+button:hover {
+  background: rgb(211, 208, 208);
+}

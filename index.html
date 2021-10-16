@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Quiz Application</title>
+    <link rel="stylesheet" href="CSS/style.css" />
+  </head>
+  <body>
+    <div class="app">
+      <div class="app__question-container">
+        <h1 id="question-container__question"></h1>
+        <p id="question-container__ques-no">1 of 10</p>
+        <div class="question-container__progress-bar">
+          <div id="progress-bar-inner"></div>
+        </div>
+
+        <p id="note">Pick an option below</p>
+      </div>
+
+      <div class="app__options-container">
+        <ul class="options-container__choices">
+        </ul>
+      </div>
+
+      <footer class="app__button-container">
+        <button class="button next">Next</button>
+        <button class="button restart">Restart</button>
+      </footer>
+    </div>
+
+    <script src="JS/app.js" type="module"></script>
+  </body>
+</html>
